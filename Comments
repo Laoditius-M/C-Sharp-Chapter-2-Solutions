@@ -1,0 +1,35 @@
+/* Exercise 6 - Comments 
+Write, compile, and test a program named Comments that displays a statement
+that defines program comments. Include at least one block comment and one
+line comment in the program.
+Program Requirement:
+- Display a statement that defines program comments.
+- Include at least one block comment and one line comment in the program.
+*/
+
+//Programme: ProgrammerFromMars
+
+using static System.Console;
+namespace exercise6
+{
+  class Comments
+  {
+    static void Main(string[] args)
+    {
+      /*
+      Display heading - Block Comment
+      */
+      
+      WriteLine(" ");
+      WriteLine("- COMMENTS -");
+      WriteLine(" ");
+      
+      //Display the definition of a Program Comment - Line Comment
+      WriteLine("\nProgram Comment:");
+      WriteLine("- Nonexecuting statements that you add to document a program");
+      WriteLine("\n END ");
+      
+      ReadLine(); //System Pause
+    }
+  }
+}
