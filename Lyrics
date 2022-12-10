@@ -1,0 +1,33 @@
+/* Exercise 5 - Lyrics 
+Write, compile, and test a program named Lyrics that displays at least four
+lines of your favorite song.
+Program Requirement:
+- Display at least four lines of your favorite song.
+*/
+
+//Programmer: ProgrammerFromMars
+
+using System;
+using static System.Console;
+namespace Exercise5
+{
+  class Lyrics
+  {
+    static void Main(string[] args)
+    {
+      //Display Heading
+      WriteLine(" ");
+      WriteLine("- LYRICS -");
+      WriteLine(" ");
+      
+      //Display the four lines of my favouite song
+      WriteLine("\nI can swallow a bottle of alcohol and I'll feel like Godzilla");
+      WriteLine("Better hit the deck like the card dealer");
+      WriteLine("My whole squad in here, walkin' around the party");
+      WriteLine("Across between a zombie apocalypse and big Bobby");
+      WriteLine("\n END ");
+      
+      ReadLine(); //System Pause
+    }
+  }
+}
