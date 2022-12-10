@@ -1,0 +1,44 @@
+/* Exercise 7 - StopSign 
+Write, compile, and test a program named StopSign that displays a pattern
+similar to the image shown in Figure 1-19.
+ xxxxxx
+x      x
+x STOP x
+x      x
+ xxxxxx
+    x
+    x
+    x
+    x
+*/
+
+//Programmer: ProgrammerFromMars
+
+using System;
+using static System.Console;
+namespace exercise7
+{
+  class StopSign
+  {
+    static void Main(string[] args)
+    {
+      //Display Heading
+      WriteLine(" ");
+      WriteLine("- STOP SIGN -");
+      WriteLine(" \n");
+      
+      //Display a pattern of a stop sign
+      WriteLine(" XXXXXX");
+      WriteLine(" X X");
+      WriteLine("X STOP X");
+      WriteLine(" X X");
+      WriteLine(" XXXXXX");
+      WriteLine(" X");
+      WriteLine(" X");
+      WriteLine(" X");
+      WriteLine(" X");
+      WriteLine("\n END ");
+      ReadLine(); //System Pause
+    }
+  }
+}
