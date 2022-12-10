@@ -1,0 +1,32 @@
+/* Exercise 4 - PersonalInfo
+Write, compile, and test a program named PersonalInfo that displays a person’s
+name, birthdate, work phone number, and cell phone number.
+Program Requirement:
+- Display a person’s name, birthdate, work phone number, and cell phone number.
+*/
+
+//Programmer: ProgrammerFromMars
+
+using System;
+using static System.Console;
+namespace Exercise4
+{
+class PersonalInfo
+{
+static void Main(string[] args)
+{
+  //Display Heading
+  WriteLine(" ");
+  WriteLine("- PERSONAL INFO -");
+  WriteLine(" ");
+  //Display the details
+  
+  WriteLine("\nName: Jane Doe");
+  WriteLine("Birthdate: 25/07/2001");
+  WriteLine("Work Phone No.: 012 218 8848");
+  WriteLine("Personal Phone No.: 072 123 4567");
+  WriteLine("\n ");
+  ReadLine(); //System Pause
+ }
+}
+}
