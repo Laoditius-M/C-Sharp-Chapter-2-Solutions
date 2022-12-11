@@ -1,0 +1,50 @@
+/* Exercise 17 - Planets 
+Create an enumeration named Planet that holds the names for the eight planets
+in our solar system, starting with MERCURY and ending with NEPTUNE.
+Write a program named Planets that prompts the user for a numeric position,
+and display the name of the planet that is in the requested position.
+Program Requirement:
+- Display the name of the planet that is in the requested position.
+*/
+
+//Programmer: ProgrammerFromMars
+
+using System;
+using static System.Console;
+namespace Exercise17
+{
+  class Planets
+  {
+  //Enumaration for Planet names
+  enum Planet
+  {
+  MERCURY = 1, VENUS, EARTH, MARS,
+  JUPITER, SATURN, URANUS, NEPTUNE
+  }
+    static void Main(string[] args)
+    {
+      //Display Heading
+      WriteLine("-----------");
+      WriteLine("- PLANETS -");
+      WriteLine("-----------");
+      
+      // Variable Declaration
+      Planet planetName;
+      int requestedPosition;
+      
+      //Get planet position from the user (User input) and convert
+      Write("Enter planet position >> ");
+      requestedPosition = int.Parse(ReadLine());
+      
+      //Convert requested planet position to planet name
+      planetName = (Planet)requestedPosition;
+      
+      //Display the name of the planet that is in the requested position
+      WriteLine("\nPlanet in Position {0} is {1}", requestedPosition,
+      planetName);
+      WriteLine("\n END ");
+      
+      ReadLine(); //System Pause
+    }
+  }
+}
