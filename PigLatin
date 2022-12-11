@@ -1,0 +1,55 @@
+/* Exercise 18 - PigLatin 
+Pig Latin is a nonsense language. To create a word in pig Latin, you remove
+the first letter and then add the first letter and “ay” at the end of the word.
+Write a program named PigLatin that allows the user to enter a word and
+displays the pig Latin version
+Example: “dog” becomes “ogday” and “cat” becomes “atcay.”
+Program Requirement:
+- Enter a word and display the pig Latin version.
+*/
+
+//Programmer: ProgrammerFrom Mars
+
+using System;
+using static System.Console;
+namespace exercise18
+{
+  class PigLatin
+  {
+    static void Main(string[] args)
+    {
+      //Display Heading
+      WriteLine("-------------");
+      WriteLine("- PIG LATIN -");
+      WriteLine("-------------");
+      
+      // Variable Declaration
+      const string WORD_ENDING = "ay";
+      string userWord; //Store the value of the word
+      entered by the user
+      string firstLetter;
+      string restOfWord; //Store the rest of the word
+      after the first letter
+      string pigLatinWord; //Store PigLatin version
+      
+      //Get a word from the user (User input)
+      Write("Enter a word >> ");
+      userWord = ReadLine();
+      
+      //Get first letter of the word
+      firstLetter = userWord.Substring(0, 1);
+      
+      //Get rest of the word (word after first letter)
+      restOfWord = userWord.Substring(1, userWord.Length - 1);
+      
+      //Generate the pig latin version of the user's word
+      pigLatinWord = restOfWord + firstLetter + WORD_ENDING;
+      
+      //Display the pig Latin version of the original word
+      WriteLine("\n{0} becomes {1}", userWord, pigLatinWord);
+      WriteLine("\n END ");
+      
+      ReadLine(); //System Pause
+    }
+  }
+}
